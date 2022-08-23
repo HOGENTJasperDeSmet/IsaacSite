@@ -12,11 +12,12 @@ const Albums = {
 };
 const Ab = {
   template: `<main class="showcase">
+                  <img src="images/ab/4Klein.jpg" onclick="openImg(4)">
+                  <img src="images/ab/5Klein.jpg" onclick="openImg(5)">
+                  <img src="images/ab/3KLein.jpg" onclick="openImg(3)">
+                  <img src="images/ab/2Klein.jpg" onclick="openImg(2)">
+           
                   <img src="images/ab/1.jpg" onclick="openImg(1)">
-                  <img src="images/ab/2.jpg" onclick="openImg(2)">
-                  <img src="images/ab/3.jpg" onclick="openImg(3)">
-                  <img src="images/ab/4.jpg" onclick="openImg(4)">
-                  <img src="images/ab/5.jpg" onclick="openImg(5)">
                 </main>`,
 };
 const Travel = {
