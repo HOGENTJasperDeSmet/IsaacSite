@@ -30,7 +30,8 @@ body {
   flex-direction: column;
 }
 .backgroundHomepage {
-  background-image: url("images/home2k.jpg");
+  background-image: url("images/home2k-min.jpg");
+  transition: background-image 1s ease-in-out;
 }
 .backgroundWorkpage {
   background-image: url("images/work.jpg");
