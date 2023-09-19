@@ -134,3 +134,9 @@ document.querySelector(".anchorlink").addEventListener("click", function (e) {
     behavior: "smooth",
   });
 });
+
+document.querySelector("#scrollTo").scrollIntoView({
+  behavior: "smooth",
+});
+
+

@@ -31,7 +31,7 @@ body {
 }
 .backgroundHomepage {
   background-image: url("images/home2k-min.jpg");
-  transition: background-image 1s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
 }
 .backgroundWorkpage {
   background-image: url("images/work.jpg");
