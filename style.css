@@ -30,7 +30,7 @@ body {
   flex-direction: column;
 }
 .backgroundHomepage {
-  background-image: url("images/home2k-min.jpg");
+  background-image: url("images/home-min.jpg");
   transition: background-image 0.2s ease-in-out;
 }
 .backgroundWorkpage {
@@ -298,18 +298,6 @@ button:active {
   font-family: IsaacIstVergeten;
 }
 
-/* submit knop*/
-.bigPic {
-  cursor: pointer;
-  position: fixed;
-  display: none;
-  justify-content: center;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 30px 45px 30px 30px;
-  background: rgba(0, 0, 0, 0.5);
-}
 .fullscreenPic {
   height: 100%;
 }
@@ -341,7 +329,7 @@ button:active {
     text-shadow: 0px 0px 9px #948f8f;
   }
   .backgroundHomepage {
-    background-image: url("images/home2k.jpg");
+    background-image: url("images/home-min.jpg");
     background-position-x: -400px;
   }
   .backgroundWorkpage {
@@ -461,4 +449,175 @@ button {
 }
 .spin.done span:last-child {
   opacity: 1;
+}
+
+.bigPic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Bespoke sans, sans-serif;
+}
+
+.bigPic {
+  margin: 0 auto;
+}
+
+figure {
+  margin: 0;
+  padding: 0 0.5rem;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+figure img {
+  display: block;
+  max-width: 100%;
+  max-height: 74vh;
+  margin-right: auto;
+  margin-left: auto;
+  contain: layout;
+}
+
+figcaption {
+  position: relative;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+  line-height: 1.375;
+}
+
+figcaption h2,
+figcaption div,
+figcaption dl {
+  contain: layout;
+}
+
+figcaption h2 {
+  view-transition-name: photo-heading;
+}
+
+figcaption div {
+  view-transition-name: photo-location-time;
+}
+
+figcaption dl {
+  view-transition-name: photo-meta;
+}
+
+::view-transition-new(photo-heading):only-child,
+::view-transition-new(photo-location-time):only-child,
+::view-transition-new(photo-meta):only-child {
+  animation: 0.3s ease var(--animation-delay, 0s) both fade-in,
+    0.3s ease var(--animation-delay, 0s) both slide-up;
+}
+
+::view-transition-new(photo-heading):only-child {
+  --animation-delay: 50ms;
+}
+
+::view-transition-new(photo-location-time):only-child {
+  --animation-delay: 0.1s;
+}
+
+::view-transition-new(photo-meta):only-child {
+  --animation-delay: 0.15s;
+}
+
+::view-transition-old(photo-heading):only-child,
+::view-transition-old(photo-location-time):only-child,
+::view-transition-old(photo-meta):only-child {
+  animation: 0.2s ease var(--animation-delay, 0s) both fade-out,
+    0.2s ease var(--animation-delay, 0s) both slide-down;
+}
+
+::view-transition-old(photo-heading):only-child {
+  --animation-delay: 0.15s;
+}
+
+::view-transition-old(photo-location-time):only-child {
+  --animation-delay: 0.1s;
+}
+
+::view-transition-old(photo-meta):only-child {
+  --animation-delay: 50ms;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(2.5rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(2.5rem);
+  }
+}
+
+figcaption:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 2.25rem;
+  height: 2px;
+  background-color: #000;
+}
+
+figure h2 {
+  margin: 0;
+  font-size: 1em;
+}
+
+figure h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+figure dl {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+figure dt,
+figure dd {
+  margin: 0;
+  display: inline;
+  font-size: 1em;
+  color: #666;
+}
+
+figure dd + dt + dd {
+  margin-left: 0.375rem;
 }
