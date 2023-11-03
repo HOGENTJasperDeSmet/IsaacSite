@@ -1,5 +1,32 @@
 var bairImages = [
+{
+    src: "pgVSdmyoU-I",
+    video: true,
+},
 
+{
+    src: "yd8fS001jTQ",
+    video: true,
+},
+{
+    src: "images/bair/brussels1_high.jpg",
+    vertical: true,
+},
+{
+    src: "images/bair/brussels2_high.jpg",
+    vertical: false,
+},
+{
+    src: "images/bair/brussels3_high.jpg",
+    description: "hoog",
+    vertical: true,
+},
+{
+    src: "images/bair/brussels4_high.jpg",
+    place: "Rebranding reveal",
+    description: "2021",
+    vertical: false,
+},
 ]
 
 // src == plaats van de foto!
