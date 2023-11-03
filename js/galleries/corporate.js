@@ -1,5 +1,38 @@
 var corporateImages = [
-
+    {
+        src: "RocpX4BgWx8",
+        video: true,
+    },
+    
+    {
+        src: "B6UHDK0_DAU",
+        video: true,
+    },
+    {
+        src: "images/corporate/corporate1_high.jpg",
+        place: "KH",
+        description: "vacature foto's",
+        vertical: true,
+    },
+    //oei kan deze hierboven niet op klikken voor description?
+    {
+        src: "images/corporate/corporate2_high.jpg",
+        place: "Stage StoryMe",
+        description: "BTS Take Two series",
+        vertical: false,
+    },
+    {
+        src: "images/corporate/corporate3_high.jpg",
+        place: "Stage StoryMe",
+        description: "StoryMe Talks",
+        vertical: true,
+    },
+    {
+        src: "images/corporate/corporate4_high.jpg",
+        place: "Ostend Airport",
+        description: "Diamond Demo #DA42MPP",
+        vertical: false,
+    },
 ]
 
 // src == plaats van de foto!
