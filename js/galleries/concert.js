@@ -1,5 +1,47 @@
 var concertImages = [
-
+    {
+        src: "images/concerts/concerts1_high.jpg",
+        title: "Kneistival 2019",
+        description: "Heideroosjes",
+        vertical: false,
+      },
+      {
+        src: "images/concerts/concerts2_high.jpg",
+        title: "Kneistival 2019",
+        description: "Les Truttes",
+        vertical: false,
+      },
+      {
+        src: "images/concerts/concerts3_high.jpg",
+        title: "Kneistival 2023",
+        description: "Willy On Tour",
+        vertical: false,
+      },
+      {
+        src: "images/concerts/concerts4_high.jpg",
+        title: "Robert. studio session",
+        description: "North Garden Studios",
+        vertical: false,
+      },
+      {
+        src: "images/concerts/concerts5_high.jpg",
+        title: "Kneistival 2023",
+        description: "Zornik",
+        vertical: false,
+      },
+      {
+        src: "images/concerts/concerts6_high.jpg",
+        title: "Kneistival 2023",
+        description: "Jasper Erkens",
+        vertical: true,
+      },
+      {
+        src: "images/concerts/concerts7_high.jpg",
+        title: "Kneistival 2023",
+        description: "K&prime;s Choice",
+        vertical: false,
+      },
+      
 ]
 
 // src == plaats van de foto!
