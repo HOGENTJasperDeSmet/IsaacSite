@@ -17,7 +17,7 @@ const Ab = {
       <main class="showcase">
       ${this.images.map((elem, index) => {
         if (elem.video) {
-          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=1&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=${elem.autoplay ? "1" : "0"}&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
         }
         return `<img 
@@ -44,7 +44,7 @@ const Travel = {
       <main class="showcase">
       ${this.images.map((elem, index) => {
         if (elem.video) {
-          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=1&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=${elem.autoplay ? "1" : "0"}&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
         }
         return `<img 
@@ -72,7 +72,7 @@ const Knokke = {
       <main class="showcase">
       ${this.images.map((elem, index) => {
         if (elem.video) {
-          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=1&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=${elem.autoplay ? "1" : "0"}&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
         }
         return `<img 
@@ -99,10 +99,9 @@ const Concerts = {
       <main class="showcase">
       ${this.images.map((elem, index) => {
         if (elem.video) {
-          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=1&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=${elem.autoplay ? "1" : "0"}&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
         }
-
         return `<img 
         src="${elem.src}" 
         ${elem.vertical ? `class="verticalpicture"` : ""} 
@@ -128,7 +127,8 @@ const brusselsairlines = {
       <main class="showcase">
       ${this.images.map((elem, index) => {
         if (elem.video) {
-          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=1&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=${elem.autoplay ? "1" : "0"}&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+
         }
         return `<img 
         src="${elem.src}" 
@@ -153,12 +153,18 @@ const corporate = {
         <img class="backArrow" src="images/arrowBack.svg" />
       </a>
       <main class="showcase">
-      ${this.images.map((elem, index) => `<img 
-          src="${elem.src}" 
-          ${elem.vertical ? `class="verticalpicture"` : ""} 
-          style="view-transition-name: photo-${index}" 
-          onclick="openImg(this.src, ${index},'${elem.title}','${elem.place}','${elem.description}')"
-          >`
+      ${this.images.map((elem, index) => {
+        if (elem.video) {
+          return `<iframe class="smallytplayer" src="https://www.youtube.com/embed/${elem.src}?autoplay=${elem.autoplay ? "1" : "0"}&mute=1&controls=0"  allow="autoplay" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+
+        }
+        return `<img 
+        src="${elem.src}" 
+        ${elem.vertical ? `class="verticalpicture"` : ""} 
+        style="view-transition-name: photo-${index}" 
+        onclick="openImg(this.src, ${index},'${elem.title}','${elem.place}','${elem.description}')"
+        >`
+      }
       ).join("")}
       </main>`;
     }

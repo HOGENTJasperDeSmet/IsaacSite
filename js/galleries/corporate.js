@@ -2,8 +2,9 @@ var corporateImages = [
     {
         src: "RocpX4BgWx8",
         video: true,
+        autoplay: true
     },
-    
+
     {
         src: "B6UHDK0_DAU",
         video: true,
@@ -11,10 +12,9 @@ var corporateImages = [
     {
         src: "images/corporate/corporate1_high.jpg",
         place: "KH",
-        description: "vacature foto's",
+        description: "vacature foto&prime;s",
         vertical: true,
     },
-    //oei kan deze hierboven niet op klikken voor description?
     {
         src: "images/corporate/corporate2_high.jpg",
         place: "Stage StoryMe",
