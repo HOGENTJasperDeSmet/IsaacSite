@@ -30,7 +30,7 @@ body {
   flex-direction: column;
 }
 .backgroundHomepage {
-  background-image: url("images/home-min.jpg");
+  background-image: url("images/home-low.jpg");
   transition: background-image 0.2s ease-in-out;
 }
 .backgroundWorkpage {
@@ -331,7 +331,7 @@ button:active {
     text-shadow: 0px 0px 9px #948f8f;
   }
   .backgroundHomepage {
-    background-image: url("images/home-min.jpg");
+    background-image: url("images/home-low.jpg");
     background-position-x: -400px;
   }
   .backgroundWorkpage {
