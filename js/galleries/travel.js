@@ -1,27 +1,68 @@
 var travelImages = [
   {
-    src: "images/travel/10.jpg",
+    src: "images/travel/travel1_high.jpg",
+    place: "Bologna",
+    description: "2021",
+    vertical: false,
+
   },
   {
-    src: "images/travel/8.jpg",
-    vertical: true
+    src: "images/travel/travel2_high.jpg",
+    place: "New York, Vessel",
+    description: "2023",
+    vertical: true,
   },
   {
-    src: "images/travel/7.jpg",
+    src: "images/travel/travel3_high.jpg",
+    place: "London",
+    description: "London Eye view",
+    vertical: false,
+
   },
   {
-    src: "images/travel/6.jpg",
+    src: "images/travel/travel4_high.jpg",
+    title: "New York",
+    place: "Staten Island Ferry",
+    description: "2023",
+    vertical: true,
   },
   {
-    src: "images/travel/5.jpg",
+    src: "images/travel/travel5_high.jpg",
+    title: "New York",
+    place: "NYPL",
+    description: "2021",
+    vertical: false,
+
+  },
+
+  {
+    src: "images/travel/travel6_high.jpg",
+    title: "Altea",
+    place: " Spain",
+    description: "views",
+    vertical: false,
+
   },
   {
-    src: "images/travel/9.jpg",
-    title: "Cesna",
-    place: "Keiheuvel 2020",
-    description: "Schonen foto getrokken door Isaac",
-    vertical: false
+    src: "images/travel/travel7_high.jpg",
+    place: "France",
+    description: "summer 2019",
+    vertical: false,
   },
+  {
+    src: "images/travel/travel8_high.jpg",
+    title: "Altea la Vella",
+    place: " Spain",
+    description: "views",
+    vertical: true,
+  },
+  {
+    src: "images/travel/travel9_high.jpg",
+    place: "Venice",
+    description: "summer 2018",
+    vertical: false,
+  },
+
 ]
 
 // src == plaats van de foto!
