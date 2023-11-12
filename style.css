@@ -34,14 +34,14 @@ body {
   transition: background-image 0.2s ease-in-out;
 }
 .backgroundWorkpage {
-  background-image: url("images/work.jpg");
+  background-image: url("images/work-low.jpg");
   justify-content: space-between;
 }
 .backgroundAboutpage {
-  background-image: url("images/aboutme.jpg");
+  background-image: url("images/aboutme-low.jpg");
 }
 .backgroundContactPage {
-  background-image: url("images/contact.jpg");
+  background-image: url("images/contact-low.jpg");
 }
 .logo {
   width: 5%;
@@ -371,6 +371,10 @@ button:active {
   }
   main form {
     margin: 4vh;
+  }
+  .verticalpicture {
+    height: auto !important;
+    grid-row: span 2;
   }
 }
 
