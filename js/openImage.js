@@ -17,6 +17,15 @@ function openImg(img, x, title, place, description) {
 }
 
 function hideImg() {
+
+  if (!document.startViewTransition) {
+    document.body.innerHTML = temp;
+    window.scrollTo({
+      top: topOffset,
+    });
+    return;
+
+  }
   document.startViewTransition(() => {
 
     document.body.innerHTML = temp;

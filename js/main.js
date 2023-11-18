@@ -212,6 +212,11 @@ function openGallery() {
 
   var component = routes.find(x => x.path === window.location.hash.split('#')[1])?.component;
   if (component) {
+    if (!document.startViewTransition) {
+      showcase.innerHTML = component.template();
+      return;
+    }
+
     document.startViewTransition(() => {
       showcase.innerHTML = component.template();
     });
