@@ -1,7 +1,11 @@
 var knokkeImages = [
   {
     src: "images/knokke/knokke1.jpg"
-    
+
+  },
+  {
+    src: "images/knokke/_DSC4660_low.jpg",
+    vertical: false,
   },
   {
     src: "images/knokke/knokke2_high.jpg",
@@ -16,6 +20,7 @@ var knokkeImages = [
     vertical: false,
 
   },
+
   {
     src: "images/knokke/knokke4_high.jpg",
     vertical: false,
@@ -42,37 +47,29 @@ var knokkeImages = [
   //hier video vakantieplus
 
   {
-    
+
     src: "fbcBBSCtaFQ",
     video: true,
   },
 
   {
-  src: "images/knokke/knokke9_high.jpg",
-  place: "Zoute Grand Prix 2019",
-  description: "sfeer",
-  vertical: false,
-},
-{
-  src: "images/knokke/knokke10_high.jpg",
-  place: "Zoute Grand Prix 2019",
-  description: "sfeer",
-  vertical: false,
-},
-
-{
-  src: "images/knokke/knokke11.jpg",
-  place: "Lichtfestival",
-  description: "2019",
-  vertical: false,
-},
-
-{
-  src: "images/knokke/knokke12.jpg",
-  place: "Lichtfestival",
-  description: "2019",
-  vertical: false,
-},
+    src: "images/knokke/knokke9_high.jpg",
+    place: "Zoute Grand Prix 2019",
+    description: "sfeer",
+    vertical: false,
+  },
+  {
+    src: "images/knokke/knokke10_high.jpg",
+    place: "Zoute Grand Prix 2019",
+    description: "sfeer",
+    vertical: false,
+  },
+  {
+    src: "images/knokke/knokke11.jpg",
+    place: "Lichtfestival",
+    description: "2019",
+    vertical: false,
+  }
 
 ]
 // src == plaats van de foto!

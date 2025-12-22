@@ -6,8 +6,8 @@ function openImg(img, x, title, place, description) {
 
   if (!document.startViewTransition) {
     document.body.innerHTML = `<div class="bigPic" onclick="hideImg()">
-    <figure itemscope="" itemtype="https://schema.org/Photograph">
-        <img src="${img}" itemprop="image" alt="The hood of a red Ford Mustang" style="view-transition-name: photo-${x}">
+    <figure>
+        <img src="${img}" style="view-transition-name: photo-${x}">
       <figcaption>
         ${title !== 'undefined' ? `<h2 itemprop="name headline">${title}</h2>` : ""}
         ${place !== 'undefined' ? `<div>${place}</div>` : ""}
@@ -22,8 +22,8 @@ function openImg(img, x, title, place, description) {
 
   document.startViewTransition(() => {
     document.body.innerHTML = `<div class="bigPic" onclick="hideImg()">
-    <figure itemscope="" itemtype="https://schema.org/Photograph">
-        <img src="${img}" itemprop="image" alt="The hood of a red Ford Mustang" style="view-transition-name: photo-${x}">
+    <figure>
+        <img src="${img}" style="view-transition-name: photo-${x}">
       <figcaption>
         ${title !== 'undefined' ? `<h2 itemprop="name headline">${title}</h2>` : ""}
         ${place !== 'undefined' ? `<div>${place}</div>` : ""}

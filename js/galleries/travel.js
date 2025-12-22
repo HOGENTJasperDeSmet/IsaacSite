@@ -1,10 +1,22 @@
 var travelImages = [
   {
+    src: "images/travel/_DIV8504_low.jpg",
+    place: "Saint-Paul-de-Vence",
+    description: "2025",
+    vertical: false,
+  },
+  {
+    src: "images/travel/_DIV7711_Low_onderaan.jpg",
+    title: "Altea",
+    place: "Spain",
+    description: "2025",
+    vertical: false,
+  },
+  {
     src: "images/travel/travel1_high.jpg",
     place: "Bologna",
     description: "2021",
     vertical: false,
-
   },
   {
     src: "images/travel/travel2_high.jpg",
@@ -38,7 +50,7 @@ var travelImages = [
   {
     src: "images/travel/travel6_high.jpg",
     title: "Altea",
-    place: " Spain",
+    place: "Spain",
     description: "views",
     vertical: false,
 
@@ -48,13 +60,6 @@ var travelImages = [
     place: "France",
     description: "summer 2019",
     vertical: false,
-  },
-  {
-    src: "images/travel/travel8_high.jpg",
-    title: "Altea la Vella",
-    place: " Spain",
-    description: "views",
-    vertical: true,
   },
   {
     src: "images/travel/travel9_high.jpg",

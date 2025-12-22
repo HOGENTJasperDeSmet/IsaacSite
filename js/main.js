@@ -177,8 +177,8 @@ const mainMenu = {
   component: {
     template: `
     <main class="workShowcase">
-    <a href="#knokke">
-      <div class="knokke hvr-bob">Knokke-Heist</div>
+    <a href="#corporate">
+      <div class="corporate hvr-bob">Corporate</div>
     </a>
     <a href="#concerts">
       <div class="concerts hvr-bob">Concerts</div>
@@ -187,10 +187,10 @@ const mainMenu = {
       <div >Travel</div>
     </a>
     <a href="#brusselsairlines">
-    <div class="bair hvr-bob">Brussels Airlines</div>
+      <div class="bair hvr-bob">Brussels Airlines</div>
     </a>
-    <a href="#corporate">
-      <div class="corporate hvr-bob">Corporate</div>
+    <a href="#knokke">
+      <div class="knokke hvr-bob">Knokke-Heist</div>
     </a>
   </main>
   `

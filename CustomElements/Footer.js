@@ -3,7 +3,7 @@ class Footer extends HTMLElement {
     super()
     this.innerHTML = `
     <footer>
-      <span>© IscCdr ${new Date().getFullYear()} website made by Dieter De Backer</span>
+      <span>© IscCdr ${new Date().getFullYear()} website made by Baloe</span>
       <nav class="socialMediaNav">
         <a href="https://www.instagram.com/isaac.caudron/"><i class="flaticon-instagram"></i></a>
         <a href="https://flic.kr/ps/34QA55"><i class="flaticon-flickr"></i></a>

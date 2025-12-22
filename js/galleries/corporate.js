@@ -4,9 +4,8 @@ var corporateImages = [
         video: true,
         autoplay: true
     },
-
     {
-        src: "B6UHDK0_DAU",
+        src: "4YJIyshQx8Q",
         video: true,
     },
     {
@@ -16,10 +15,8 @@ var corporateImages = [
         vertical: true,
     },
     {
-        src: "images/corporate/corporate2_high.jpg",
-        place: "Stage StoryMe",
-        description: "BTS Take Two series",
-        vertical: false,
+        src: "B6UHDK0_DAU",
+        video: true,
     },
     {
         src: "images/corporate/corporate3_high.jpg",

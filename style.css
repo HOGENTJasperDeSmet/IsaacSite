@@ -164,9 +164,9 @@ h1 {
   max-width: 1000px;
   margin: 5vh auto;
   grid-template-areas:
-    "knokke concerts"
+    "corporate concerts"
     "bair travel"
-    "corporate travel";
+    "knokke travel";
 }
 .workShowcase div {
   display: flex;
@@ -315,9 +315,9 @@ button:active {
     grid-template-rows: 30vh 30vh 30vh 30vh 30vh;
     grid-template-areas: none;
     grid-template-areas:
-      "knokke"
-      "concerts"
       "corporate"
+      "concerts"
+      "knokke"
       "travel"
       "studentKickOff";
   }
@@ -516,6 +516,13 @@ figcaption div {
 figcaption dl {
   view-transition-name: photo-meta;
 }
+
+::view-transition-old(),
+::view-transition-new() {
+  animation:  none;
+  mix-blend-mode: normal;
+}
+
 
 ::view-transition-new(photo-heading):only-child,
 ::view-transition-new(photo-location-time):only-child,
