@@ -32,18 +32,18 @@ body {
   flex-direction: column;
 }
 .backgroundHomepage {
-  background-image: url("images/home-low.jpg");
+  background-image: url("images/home-low.webp");
   transition: background-image 0.2s ease-in-out;
 }
 .backgroundWorkpage {
-  background-image: url("images/work-low.jpg");
+  background-image: url("images/work-low.webp");
   justify-content: space-between;
 }
 .backgroundAboutpage {
-  background-image: url("images/aboutme-low.jpg");
+  background-image: url("images/aboutme-low.webp");
 }
 .backgroundContactPage {
-  background-image: url("images/contact-low.jpg");
+  background-image: url("images/contact-low.webp");
 }
 .logo {
   width: 5%;
@@ -194,28 +194,28 @@ h1 {
 }
 .travel {
   grid-area: travel;
-  background-image: url("images/travel.jpg");
+  background-image: url("images/travel.webp");
   background-size: cover;
 }
 
 .knokke {
   grid-area: knokke;
-  background-image: url("images/KnokkeHeist.jpg");
+  background-image: url("images/KnokkeHeist.webp");
 }
 
 .concerts {
   grid-area: concerts;
-  background-image: url("images/concerts.jpg");
+  background-image: url("images/concerts.webp");
 }
 
 .corporate {
   grid-area: corporate;
-  background-image: url("images/corporate.jpg");
+  background-image: url("images/corporate.webp");
 }
 
 .bair {
   grid-area: bair;
-  background-image: url("images/bair.jpg");
+  background-image: url("images/bair.webp");
 }
 footer {
   display: flex;
@@ -333,20 +333,20 @@ button:active {
     text-shadow: 0px 0px 9px #948f8f;
   }
   .backgroundHomepage {
-    background-image: url("images/home-low.jpg");
+    background-image: url("images/home-low.webp");
     background-position-x: -400px;
   }
   .backgroundWorkpage {
-    background-image: url("images/workmobileversionHD.jpg");
+    background-image: url("images/workmobileversionHD.webp");
     background-position-x: -570px;
     justify-content: space-between;
   }
   .backgroundAboutpage {
     background-position-x: -570px;
-    background-image: url("images/aboutme.jpg");
+    background-image: url("images/aboutme.webp");
   }
   .backgroundContactPage {
-    background-image: url("images/contact.jpg");
+    background-image: url("images/contact.webp");
     background-position: 930px;
   }
   .mission h1 {

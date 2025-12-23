@@ -10,20 +10,20 @@ var bairImages = [
         video: true,
     },
     {
-        src: "images/bair/brussels1_high.jpg",
+        src: "images/bair/brussels1_high.webp",
         vertical: true,
     },
     {
-        src: "images/bair/brussels2_high.jpg",
+        src: "images/bair/brussels2_high.webp",
         vertical: false,
     },
     {
-        src: "images/bair/brussels3_high.jpg",
+        src: "images/bair/brussels3_high.webp",
         description: "hoog",
         vertical: true,
     },
     {
-        src: "images/bair/brussels4_high.jpg",
+        src: "images/bair/brussels4_high.webp",
         place: "Rebranding reveal",
         description: "2021",
         vertical: false,

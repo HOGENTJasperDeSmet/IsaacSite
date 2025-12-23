@@ -1,20 +1,20 @@
 var knokkeImages = [
   {
-    src: "images/knokke/knokke1.jpg"
+    src: "images/knokke/knokke1.webp"
 
   },
   {
-    src: "images/knokke/DSC4660.jpg",
+    src: "images/knokke/DSC4660.webp",
     vertical: false,
   },
   {
-    src: "images/knokke/knokke2_high.jpg",
+    src: "images/knokke/knokke2_high.webp",
     title: "Vuurwerkfestival 23",
     description: "A-TEAM Services",
     vertical: false,
   },
   {
-    src: "images/knokke/knokke3_high.jpg",
+    src: "images/knokke/knokke3_high.webp",
     title: "Vuurwerkfestival 19",
     place: "HC Pyrotechnics",
     vertical: false,
@@ -22,11 +22,11 @@ var knokkeImages = [
   },
 
   {
-    src: "images/knokke/knokke4_high.jpg",
+    src: "images/knokke/knokke4_high.webp",
     vertical: false,
   },
   {
-    src: "images/knokke/knokke5_high.jpg",
+    src: "images/knokke/knokke5_high.webp",
     place: "Cultuurfestival 2022",
     description: "sfeer",
     vertical: false,
@@ -38,7 +38,7 @@ var knokkeImages = [
   },
 
   {
-    src: "images/knokke/knokke7_high.jpg",
+    src: "images/knokke/knokke7_high.webp",
     place: "Cultuurfestival 2023",
     description: "sfeer",
     vertical: false,
@@ -53,19 +53,19 @@ var knokkeImages = [
   },
 
   {
-    src: "images/knokke/knokke9_high.jpg",
+    src: "images/knokke/knokke9_high.webp",
     place: "Zoute Grand Prix 2019",
     description: "sfeer",
     vertical: false,
   },
   {
-    src: "images/knokke/knokke10_high.jpg",
+    src: "images/knokke/knokke10_high.webp",
     place: "Zoute Grand Prix 2019",
     description: "sfeer",
     vertical: false,
   },
   {
-    src: "images/knokke/knokke11.jpg",
+    src: "images/knokke/knokke11.webp",
     place: "Lichtfestival",
     description: "2019",
     vertical: false,

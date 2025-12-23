@@ -9,7 +9,7 @@ var corporateImages = [
         video: true,
     },
     {
-        src: "images/corporate/corporate1_high.jpg",
+        src: "images/corporate/corporate1_high.webp",
         place: "KH",
         description: "vacature foto&prime;s",
         vertical: true,
@@ -19,13 +19,13 @@ var corporateImages = [
         video: true,
     },
     {
-        src: "images/corporate/corporate3_high.jpg",
+        src: "images/corporate/corporate3_high.webp",
         place: "Stage StoryMe",
         description: "StoryMe Talks",
         vertical: true,
     },
     {
-        src: "images/corporate/corporate4_high.jpg",
+        src: "images/corporate/corporate4_high.webp",
         place: "Ostend Airport",
         description: "Diamond Demo #DA42MPP",
         vertical: false,
