@@ -530,13 +530,6 @@ figcaption dl {
   view-transition-name: photo-meta;
 }
 
-::view-transition-old(*),
-::view-transition-new(*) {
-  animation:  none;
-  mix-blend-mode: normal;
-}
-
-
 ::view-transition-new(photo-heading):only-child,
 ::view-transition-new(photo-location-time):only-child,
 ::view-transition-new(photo-meta):only-child {
