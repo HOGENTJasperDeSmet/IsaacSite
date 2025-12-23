@@ -4,7 +4,7 @@ var knokkeImages = [
 
   },
   {
-    src: "images/knokke/_DSC4660_low.jpg",
+    src: "images/knokke/DSC4660.jpg",
     vertical: false,
   },
   {

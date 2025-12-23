@@ -1,12 +1,12 @@
 var travelImages = [
   {
-    src: "images/travel/_DIV8504_low.jpg",
+    src: "images/travel/DIV8504.jpg",
     place: "Saint-Paul-de-Vence",
     description: "2025",
     vertical: false,
   },
   {
-    src: "images/travel/_DIV7711_Low_onderaan.jpg",
+    src: "images/travel/DIV7711.jpg",
     title: "Altea",
     place: "Spain",
     description: "2025",
