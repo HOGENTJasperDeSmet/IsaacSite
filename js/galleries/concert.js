@@ -1,6 +1,6 @@
 var concertImages = [
   {
-    src: "images/concerts/_DSC7595_low.jpg",
+    src: "images/concerts/11.jpg",
     title: "Emotia Erpe-Mere 2024",
     description: "Oproer",
     vertical: false,

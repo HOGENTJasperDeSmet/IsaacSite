@@ -463,6 +463,19 @@ button {
   opacity: 1;
 }
 
+.openImage {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
 .bigPic {
   display: flex;
   justify-content: center;
@@ -517,8 +530,8 @@ figcaption dl {
   view-transition-name: photo-meta;
 }
 
-::view-transition-old(),
-::view-transition-new() {
+::view-transition-old(*),
+::view-transition-new(*) {
   animation:  none;
   mix-blend-mode: normal;
 }
