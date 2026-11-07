@@ -64,22 +64,40 @@
       }
   
       disableAllButtons(form);
+      hideError(form);
       var url = form.action;
       var xhr = new XMLHttpRequest();
       xhr.open('POST', url);
       // xhr.withCredentials = true;
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.timeout = 20000; // give up after 20 seconds
       xhr.onreadystatechange = function() {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-            form.reset();
-            var formElements = form.querySelector(".form-elements")
-            if (formElements) {
-              formElements.style.display = "none"; // hide form
-            }
-              $("button").removeClass("processing");
-              $("button").addClass("done");
-            
+          if (xhr.readyState !== 4) {
+            return;
           }
+          // status 0 = blocked request (CORS, offline, timeout)
+          if (xhr.status !== 200) {
+            showError(form);
+            return;
+          }
+          // the script itself can also report an error
+          var response;
+          try {
+            response = JSON.parse(xhr.responseText);
+          } catch (e) {
+            response = null;
+          }
+          if (!response || response.result !== "success") {
+            showError(form);
+            return;
+          }
+          form.reset();
+          var formElements = form.querySelector(".form-elements")
+          if (formElements) {
+            formElements.style.display = "none"; // hide form
+          }
+          $("button").removeClass("processing");
+          $("button").addClass("done");
       };
       // url encode form data for sending as post data
       var encoded = Object.keys(data).map(function(k) {
@@ -97,6 +115,26 @@
     };
     document.addEventListener("DOMContentLoaded", loaded, false);
   
+    function showError(form) {
+      var error = form.querySelector(".form-error");
+      if (error) {
+        error.hidden = false;
+      }
+      // reset the button so the visitor can try again; the typed text stays
+      $("button").removeClass("processing");
+      var buttons = form.querySelectorAll("button");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = false;
+      }
+    }
+
+    function hideError(form) {
+      var error = form.querySelector(".form-error");
+      if (error) {
+        error.hidden = true;
+      }
+    }
+
     function disableAllButtons(form) {
       var buttons = form.querySelectorAll("button");
       for (var i = 0; i < buttons.length; i++) {

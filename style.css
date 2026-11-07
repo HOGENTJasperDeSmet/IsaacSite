@@ -463,6 +463,19 @@ button {
   opacity: 1;
 }
 
+.form-error {
+  margin-top: 12px;
+  color: #e5484d;
+  font-weight: 600;
+}
+.form-error a {
+  color: inherit;
+  text-decoration: underline;
+}
+.form-error[hidden] {
+  display: none;
+}
+
 .openImage {
       position: fixed;
       top: 0;
